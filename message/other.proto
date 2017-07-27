@@ -1,0 +1,5 @@
+//test import
+message a{
+	required string name = 1;
+	required uint32 age = 2;
+}

@@ -1,0 +1,32 @@
+//Import Structs
+message a{
+	required string name = 1;
+	required uint32 age = 2;
+}
+
+//End Import Structs
+
+//加密数据包
+message crypto_packet{    
+  //记录名
+      required string record_name = 1;
+  //token
+      required bytes token = 2;
+}
+
+//ping
+message test{    
+  //当前状态
+      required uint32 state = 1;
+}
+
+//ping
+message ping_s2c{    
+  //id
+      required uint32 id = 1;
+  //cp
+      required crypto_packet cp = 2;
+  //info
+      required a info = 3;
+}
+
